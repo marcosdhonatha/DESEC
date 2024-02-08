@@ -16,4 +16,4 @@ Responsável por coordenar alguns dos elementos chaves para manter a internet op
 
 ![1707401495622](../images/00-Internet_Assigned_Numbers_Authority/1707401495622.png)
 
-../
+![1707402457403](images/00-Internet_Assigned_Numbers_Authority/1707402457403.png)
