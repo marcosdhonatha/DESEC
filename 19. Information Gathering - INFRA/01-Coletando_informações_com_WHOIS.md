@@ -11,6 +11,7 @@ The IANA WHOIS Service is provided using the WHOIS protocol on port 43. This web
 **Pesquisando "businesscorp.com.br" no WHOIS da IANA**
 
 ```
+
 % IANA WHOIS server
 % for more information on IANA, visit http://www.iana.org
 % This query returned 1 object
@@ -62,3 +63,99 @@ changed:      2023-11-14
 source:       IANA
 ```
 
+> Note que o campo "refer" na resposta do whois da iana nos mostra quem é o resposável pelo ip, dominio, etc, pesquisado. Nesse caso o responsável é o registro.br, por isso vamos pesquisar novamente, mas dessa vez vamos usar o WHOIS do registro.br
+>
+
+
+**Pesquisando "businesscorp.com.br" no [WHOIS](https://registro.br/tecnologia/ferramentas/whois) do registro.br**
+
+## Domínio **businesscorp.com.br**
+
+
+| Titular            | Desec Security Segurança da Informação LTDA                                                               |
+| ------------------ | ------------------------------------------------------------------------------------------------------------ |
+| Documento          | **23.019.510/0001-06**                                                                                       |
+| Responsável       | Desec Security                                                                                               |
+| País              | BR                                                                                                           |
+| Contato do Titular | **JORLO47**                                                                                                  |
+| Contato Técnico   | **JORLO47**                                                                                                  |
+| Servidor DNS       | **ns1.businesscorp.com.br** 37.59.174.225                                                                   |
+| Servidor DNS       | **ns2.businesscorp.com.br** 37.59.174.226                                                                   |
+| SACI               | Sim                                                                                                          |
+| Criado             | 04/09/2017[#17416766](https://registro.br/tecnologia/ferramentas/whois/?search=17416766 businesscorp.com.br) |
+| Expiração        | 04/09/2024                                                                                                   |
+| Alterado           | 07/09/2023                                                                                                   |
+| Status             | Publicado                                                                                                    |
+
+## Contato (ID) **JORLO47**
+
+
+| Nome     | José Ricardo Longatto       |
+| -------- | ---------------------------- |
+| Email    | financeiro@desecsecurity.com |
+| País    | BR                           |
+| Criado   | 30/01/2012                   |
+| Alterado | 15/09/2023                   |
+
+> Note que agora ele traz informações sobre o dono do domínio
+
+### Pesquisando o numero de IP retornado na busca no whois do registro.br no whois da IANA:
+
+```
+% IANA WHOIS server
+% for more information on IANA, visit http://www.iana.org
+% This query returned 1 object
+
+refer:        whois.ripe.net
+
+inetnum:      37.0.0.0 - 37.255.255.255
+organisation: RIPE NCC
+status:       ALLOCATED
+
+whois:        whois.ripe.net
+
+changed:      2010-11
+source:       IANA
+
+```
+
+> Percebe-se que a entidade que controla esse IP é o RIPE NCC, por isso vamos pesquisar esse IP no [WHOIS](https://apps.db.ripe.net/db-web-ui/query) do RIPE
+
+### Pesquisando o numero de IP retornado na busca no whois do registro.br no whois do RIPE:
+
+```
+Responsible organisation: OVH Hosting LDA
+Abuse contact info: abuse@ovh.net
+
+    inetnum:         37.59.174.224 - 37.59.174.239
+    netname:         OVH_134187362
+    country:         PT
+    descr:           Failover Ips
+    org:             ORG-OL44-RIPE
+    admin-c:         OTC6-RIPE
+    tech-c:          OTC6-RIPE
+    status:          ASSIGNED PA
+    mnt-by:          OVH-MNT
+    created:         2017-03-07T16:27:02Z
+    last-modified:   2023-01-09T14:53:20Z
+    source:          RIPE
+
+    route:           37.59.0.0/16
+    descr:           OVH ISP
+    descr:           Paris, France
+    origin:          AS16276
+    mnt-by:          OVH-MNT
+    created:         2012-01-25T17:04:21Z
+    last-modified:   2012-01-25T17:04:21Z
+    source:          RIPE# Filtered
+```
+
+> Note que agora ele retorna informações importantes sobre o bloco de IPs, a empresa que vendeu esses IPs, a localização da empresa responsável e o bloco ASN do qual saiu o bloco de IP da businesscorp
+
+---
+
+## Fazendo consultas pelo terminal do linux:
+
+`whois businesscorp.com.br`
+
+> Esse programa faz uma consulta na IANA, descobre o responsável e faz a busca no whois responsável pelo dominio/ip etc
