@@ -158,4 +158,49 @@ Abuse contact info: abuse@ovh.net
 
 `whois businesscorp.com.br`
 
+```
+% Copyright (c) Nic.br
+%  The use of the data below is only permitted as described in
+%  full by the Use and Privacy Policy at https://registro.br/upp ,
+%  being prohibited its distribution, commercialization or
+%  reproduction, in particular, to use it for advertising or
+%  any similar purpose.
+%  2024-02-08T17:50:26-03:00 - IP: 200.131.186.129
+
+domain:      businesscorp.com.br
+owner:       Desec Security Segurança da Informação LTDA
+ownerid:     23.019.510/0001-06
+responsible: Desec Security
+country:     BR
+owner-c:     JORLO47
+tech-c:      JORLO47
+nserver:     ns1.businesscorp.com.br 37.59.174.225
+nsstat:      20240205 AA
+nslastaa:    20240205
+nserver:     ns2.businesscorp.com.br 37.59.174.226
+nsstat:      20240205 AA
+nslastaa:    20240205
+saci:        yes
+created:     20170904 #17416766
+changed:     20230907
+expires:     20240904
+status:      published
+
+nic-hdl-br:  JORLO47
+person:      José Ricardo Longatto
+e-mail:      financeiro@desecsecurity.com
+country:     BR
+created:     20120130
+changed:     20230915
+
+% Security and mail abuse issues should also be addressed to
+% cert.br, http://www.cert.br/ , respectivelly to cert@cert.br
+% and mail-abuse@cert.br
+%
+% whois.registro.br accepts only direct match queries. Types
+% of queries are: domain (.br), registrant (tax ID), ticket,
+% provider, CIDR block, IP and ASN.
+
+```
+
 > Esse programa faz uma consulta na IANA, descobre o responsável e faz a busca no whois responsável pelo dominio/ip etc
