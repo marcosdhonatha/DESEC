@@ -12,10 +12,13 @@ s.send((domain+"\r\n").encode())
 
 
 try:
-    resposta = s.recv(1024)
-    print(resposta.decode())
+    resposta = s.recv(1024).decode().split()
+   
 except ConnectionResetError as e:
     print("Erro de conexão:", e)
     
+indice_query= resposta.index("refer:") +1
 
-#Continua...
+print(resposta[indice_query])
+
+
